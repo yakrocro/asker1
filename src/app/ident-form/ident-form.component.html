@@ -3,23 +3,28 @@
   <div id="id-block" class="w-75">
     <h3>Identification</h3>
     <form #userForm="ngForm">
-      {{ userForm.value | json }}
+      <!-- {{ userForm.value | json }}
+      <hr>
+      {{ userModel | json }} -->
       <div class="form-group">
         <label for="email">Adresse E-mail</label>
-        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
-        placeholder="Email" ngModel>
+        <input type="email" required class="form-control" id="email" name="email" aria-describedby="emailHelp"
+        placeholder="Email" [(ngModel)]="userModel.email" #email="ngModel" [class.is-invalid]="email.invalid">
+        <!-- {{ email.valid  }} -->
         <!-- <small id="emailHelp" class="form-text text-muted">Votre email est confidentiel</small> -->
+        <small class="text-danger" [class.d-none]="email.valid || email.untouched">the email is required</small>
       </div>
       <div class="form-group">
         <label for="password">Mot de passe</label>
-        <input type="password" class="form-control" id="password" placeholder="Mot de passe"
-        name="password" ngModel>
+        <input type="password" class="form-control" required id="password" placeholder="Mot de passe"
+        name="password" #pswd="ngModel" [class.is-invalid]="pswd.invalid && pswd.touched"
+        [(ngModel)]="userModel.password">
       </div>
       <!-- <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div> -->
-      <button type="button" class="btn btn-primary" (click) = "afficher(email.value)">Submit</button>
+      <button type="button" class="btn btn-primary" (click) = "afficher(email)">Submit</button>
     </form>
   </div>
 </div>

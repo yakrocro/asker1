@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
 
 @Component({
   selector: 'app-ident-form',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ident-form.component.css']
 })
 export class IdentFormComponent implements OnInit {
+
+  userModel = new User('juju', 'juju@email.com', 'mdp');
 
   constructor() { }
 
