@@ -12,11 +12,10 @@ export class IdentFormComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
-  afficher(name:string){
-    console.log('you are my hero ' + name);
+  onSubmit(){
+    console.log(this.userModel);
   }
 
 }

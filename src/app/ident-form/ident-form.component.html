@@ -2,7 +2,7 @@
 <div id="id-block-container" class="d-flex align-items-center w-100 justify-content-center">
   <div id="id-block" class="w-75">
     <h3>Identification</h3>
-    <form #userForm="ngForm">
+    <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
       <!-- {{ userForm.value | json }}
       <hr>
       {{ userModel | json }} -->
@@ -20,11 +20,13 @@
         name="password" #pswd="ngModel" [class.is-invalid]="pswd.invalid && pswd.touched"
         [(ngModel)]="userModel.password">
       </div>
-      <!-- <div class="form-group form-check">
+      <!--
+      <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div> -->
-      <button type="button" class="btn btn-primary" (click) = "afficher(email)">Submit</button>
+      </div>
+    -->
+      <button type="submit" class="btn btn-primary" >Submit</button>
     </form>
   </div>
 </div>
