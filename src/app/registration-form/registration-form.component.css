@@ -1,0 +1,10 @@
+.container {
+  /* width:500px; */
+
+
+}
+
+:host div {
+  margin-left:  0;
+  margin-right: 0;
+}

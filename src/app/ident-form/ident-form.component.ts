@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { ActivatedRoute } from '@angular/router';
 import { User } from '../user';
 
 @Component({
@@ -16,6 +15,7 @@ export class IdentFormComponent implements OnInit {
   ngOnInit() { }
 
   onSubmit(){
+    window.location.replace('/questionnaire');
     console.log(this.userModel);
   }
 

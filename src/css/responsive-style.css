@@ -3,6 +3,19 @@ html, body {
   margin: 0 ;
 }
 
+.title {
+  font-size: 1.75em;
+  font-weight:normal;
+  margin: 1em 0em;
+}
+
+.user-form {
+  width:500px;
+}
+
+.user-form .form-group {
+  margin-bottom: 1.25em; 
+}
 
 #id-block {
   /* width: 400px; */
