@@ -1,31 +1,20 @@
 
-<div id="id-block-container" class="d-flex align-items-center w-100 justify-content-center">
-  <div id="id-block" class="w-75">
+<div id="id-block-container" class="container">
+  <div id="id-block">
     <h3>Identification</h3>
-    <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
-      <!-- {{ userForm.value | json }}
-      <hr>
-      {{ userModel | json }} -->
+    <form>
       <div class="form-group">
-        <label for="email">Adresse E-mail</label>
+        <label for="email">Adresse e-mail </label>
         <input type="email" required class="form-control" id="email" name="email" aria-describedby="emailHelp"
-        placeholder="Email" [(ngModel)]="userModel.email" #email="ngModel" [class.is-invalid]="email.invalid">
-        <!-- {{ email.valid  }} -->
-        <!-- <small id="emailHelp" class="form-text text-muted">Votre email est confidentiel</small> -->
-        <small class="text-danger" [class.d-none]="email.valid || email.untouched">the email is required</small>
+        placeholder="Email" >
       </div>
+
       <div class="form-group">
-        <label for="password">Mot de passe</label>
-        <input type="password" class="form-control" required id="password" placeholder="Mot de passe"
-        name="password" #pswd="ngModel" [class.is-invalid]="pswd.invalid && pswd.touched"
-        [(ngModel)]="userModel.password">
+        <label for="ident-password">Mot de passe</label>
+        <input type="password" class="form-control" required id="ident-password" placeholder="Mot de passe"
+        name="ident-password" >
       </div>
-      <!--
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-    -->
+
       <button type="submit" class="btn btn-primary" >Submit</button>
     </form>
   </div>

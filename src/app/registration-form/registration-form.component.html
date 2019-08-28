@@ -1,0 +1,30 @@
+
+<div class="container">
+  <h2>Registration Form</h2>
+  <form [formGroup]="registrationForm" >
+    <div class="form-group">
+      <label for="userName">Username</label>
+      <input type="text" name="userName" id="userName"
+             formControlName="userName" value=""
+             class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password"
+             formControlName="password" value=""
+             class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm password</label>
+      <input type="password" name="confirmPassword" id="confirmPassword"
+             formControlName="confirmPassword" value="" 
+             class="form-control">
+    </div>
+
+    <button type="submit" name="btn-registration" id="btn-registration" class="btn btn-primary">Registrate</button>
+
+  </form>
+
+</div>
