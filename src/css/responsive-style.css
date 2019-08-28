@@ -1,3 +1,9 @@
+html, body {
+  height: 100% !important ;
+  margin: 0 ;
+}
+
+
 #id-block {
   width: 400px;
 }
@@ -5,7 +11,7 @@
     width: 200px !important;
     margin: 20px 0 !important;
     background-color: yellowgreen !important;
-  }
+}
 
 
 /* Extra small devices (phones, 600px and down) */
