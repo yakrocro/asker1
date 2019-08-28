@@ -5,11 +5,11 @@ html, body {
 
 
 #id-block {
-  width: 400px;
+  /* width: 400px; */
 }
 #id-block.button {
-    width: 200px !important;
-    margin: 20px 0 !important;
+    /* width: 200px !important;
+    margin: 20px 0 !important; */
     background-color: yellowgreen !important;
 }
 
@@ -58,7 +58,7 @@ html, body {
   }
 
   button {
-      width: 200px !important;
+      /* width: 200px !important; */
       margin: 20px 0 !important;
       /* background-color: yellowgreen !important; */
     }

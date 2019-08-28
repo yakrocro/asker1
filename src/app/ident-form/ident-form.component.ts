@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+// import { ActivatedRoute } from '@angular/router';
+import { User } from '../user';
 
 @Component({
   selector: 'app-ident-form',
@@ -8,15 +9,14 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class IdentFormComponent implements OnInit {
 
-  constructor(
-    private route: ActivatedRoute,
-  ) { }
+  userModel = new User('juju', 'juju@email.com', 'mdp');
 
-  ngOnInit() {
-  }
+  constructor() { }
 
-  afficher(name:string){
-    console.log('you are my hero ' + name);
+  ngOnInit() { }
+
+  onSubmit(){
+    console.log(this.userModel);
   }
 
 }

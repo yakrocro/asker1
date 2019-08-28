@@ -3,14 +3,14 @@
   width:200px; */
 }
 #id-block {
-  margin: 20px 0px;
-  padding: 20px 20px;
+  /* margin: 20px 0px;
+  padding: 20px 20px; */
   /* background-color: red; */
 
 }
 
 #id-block.form-row,  #id-block.form-group,{
   display: block;
-  width:100%;
+  /* width:100%; */
   background-color: green;
 }
