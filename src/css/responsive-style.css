@@ -14,16 +14,23 @@ html, body {
 }
 
 .user-form .form-group {
-  margin-bottom: 1.25em; 
+  margin-bottom: 1.25em;
 }
 
-#id-block {
-  /* width: 400px; */
+.message-block {
+  height: 200px;
+  width: 500px;
+  position: relative;
+  /* border: 3px solid green; */
 }
-#id-block.button {
-    /* width: 200px !important;
-    margin: 20px 0 !important; */
-    background-color: yellowgreen !important;
+
+.message-block p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 

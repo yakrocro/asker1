@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+// import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-questionnaire',
@@ -8,11 +8,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class QuestionnaireComponent implements OnInit {
 
+  questionnaires = [];
+  messageVide ="No questionnaire created.";
+
   constructor(
-    private route:ActivatedRoute,
+    // private route:ActivatedRoute,
   ) { }
 
   ngOnInit() {
+  }
+
+  all() {
+    if( this.questionnaires.length > 0 ) {
+    }
   }
 
 }
