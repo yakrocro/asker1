@@ -24,7 +24,8 @@
                   </small>
                   <small *ngIf="registrationForm.get('userName').errors?.forbiddenName"
                          class="text-danger">
-                         {{registrationForm.get('userName').errors?.forbiddenName.value}} username not allowed.
+                         {{ registrationForm.get('userName').errors?.forbiddenName.value }}
+                          username not allowed.
                   </small>
       </div>
     </div>

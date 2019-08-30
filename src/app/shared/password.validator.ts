@@ -1,4 +1,4 @@
-import { AbstractControl, ValidatorFn } from '@angular/forms';
+import { AbstractControl } from '@angular/forms';
 
 export function passwordValidator(control: AbstractControl) : { [key: string] : any } | null {
   const password = control.get('password');
