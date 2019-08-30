@@ -22,6 +22,10 @@
                          class="text-danger">
                          username is too short. minimum length 3.
                   </small>
+                  <small *ngIf="registrationForm.get('userName').errors?.forbiddenName"
+                         class="text-danger">
+                         {{registrationForm.get('userName').errors?.forbiddenName.value}} username not allowed.
+                  </small>
       </div>
     </div>
 
@@ -40,9 +44,9 @@
       <input type="password" name="confirmPassword" id="confirmPassword"
              formControlName="confirmPassword" value=""
              class="form-control"
-             [class.is-invalid]="registrationForm.get('confirmPassword').invalid &&
-                                 registrationForm.get('confirmPassword').touched">
-      <small>should be the same password</small>
+             [class.is-invalid]="registrationForm.errors?.misMatch">
+      <small *ngIf="registrationForm.errors?.misMatch" class="text-danger">
+        Confirm password does not match Password </small>
     </div>
 
     <button type="submit" name="btn-registration" id="btn-registration"
