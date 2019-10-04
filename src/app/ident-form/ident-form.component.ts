@@ -18,8 +18,9 @@ export class IdentFormComponent implements OnInit {
   ngOnInit() { }
 
   onSubmit(){
-    this.router.navigate(['/questionnaire']);
-    // console.log(this.userModel);
+    window.location.replace('/questionnaire');
+    // this.router.navigate()
+    console.log(this.userModel);
   }
 
 }
