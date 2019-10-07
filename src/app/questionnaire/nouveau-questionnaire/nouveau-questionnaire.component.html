@@ -1,0 +1,125 @@
+<h2 class="title">Nouveau questionnaire</h2>
+
+<form>
+
+  <div class="form-group row">
+    <label for="nom-questionnaire" class="col-sm-2 col-form-label">Nom</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="nom-questionnaire" >
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="description" class="col-sm-2 col-form-label">Description</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="description" >
+    </div>
+  </div>
+
+  <div class="form-group row align-items-center">
+    <label for="theme" class="col-sm-2 col-form-label">Theme</label>
+    <div class="col-sm-6">
+      <div class="w-100">
+        <select id="theme" class="form-control">
+          <option selected>Choisir un thème...</option>
+          <option value="ajouter"> Ajouter un nouveau thème</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row align-items-center">
+    <div class="col-sm-2 col-form-label">&nbsp;</div>
+    <div class="form-group w-75" id="btn-nouveau-theme">
+      <label for="theme-nom " >Nouveau theme</label>
+      <input type="text" name="theme-nom" class="form-control" placeholder="Nom">
+      <input type="text" name="theme-description" value="" class="form-control" placeholder="Description">
+      <button type="button" name="button" class="btn btn-outline-secondary space">Ajouter</button>
+    </div>
+  </div>
+
+  <div class="form-group row align-items-center ">
+    <label for="nb-question" class="col-sm-2 col-form-label">Nombre de question</label>
+    <div class="col-sm-10">
+      <input class="form-control w-100" type="text" name="nb-question" id="nb-question" >
+    </div>
+  </div>
+
+  <div class="form-group row align-items-center">
+    <label for="ordre-question" class="col-sm-2 col-form-label align-top">Ordre des questions</label>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ordre-question" id="ordre-creation" value="ordre-creation" checked>
+        <label class="form-check-label" for="ordre-creation">
+          Ordre de creation
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ordre-question" id="ordre-aleatoire" value="ordre-aleatoire" >
+        <label class="form-check-label" for="ordre-aleatoire">
+          Ordre aleatoire
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row align-items-center">
+    <label for="evolution-oui" class="col-sm-2 col-form-label">Afficher évolution</label>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-evolution" id="evolution-oui" value="evolution-oui" checked>
+        <label class="form-check-label" for="evolution-oui"> Oui </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-evolution" id="evolution-non" value="evolution-non" >
+        <label class="form-check-label" for="evolution-non">  Non </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row " id="affR">
+    <!-- <label for="evolution-oui" class="col-sm-2 col-form-label">Afficher le resultat </label> -->
+    <span class="col-sm-2 spl-text-align">Afficher le resultat </span>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-resultat"
+               id="apres-chaque-question" value="apres-chaque-question" checked>
+        <label class="form-check-label" for="apres-chaque-question">Après chaque question</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-resultat" id="fin-questionnaire" value="fin-questionnaire" >
+        <label class="form-check-label" for="fin-questionnaire">A la fin du questionnaire</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-resultat" id="pas-afficher" value="pas-afficher" >
+        <label class="form-check-label" for="pas-afficher">Ne pas afficher</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="form-row align-items-center">
+    <label for="evolution-oui" class="col-sm-2 col-form-label">Afficher le sc </label>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-resultat"
+               id="apres-chaque-question" value="apres-chaque-question" checked>
+        <label class="form-check-label" for="apres-chaque-question">Après chaque question</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-resultat" id="fin-questionnaire" value="fin-questionnaire" >
+        <label class="form-check-label" for="fin-questionnaire">A la fin du questionnaire</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-resultat" id="pas-afficher" value="pas-afficher" >
+        <label class="form-check-label" for="pas-afficher">Ne pas afficher</label>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="btn-group" role="group" aria-label="Basic example" id="btn-group">
+    <button type="button" class="btn btn-outline-secondary">Ajouter une question</button>
+    <button type="button" class="btn btn-outline-secondary">Enregistrer</button>
+    <button type="button" class="btn btn-outline-secondary">Annuler</button>
+  </div>
+
+</form>

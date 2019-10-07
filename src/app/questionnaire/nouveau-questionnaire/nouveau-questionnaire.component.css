@@ -1,0 +1,42 @@
+.spl-padding {
+  padding: 0px ;
+  margin: 0px;
+}
+
+.spl-btn {
+  /* padding: 0px !important; */
+  /* margin: 0px !important; */
+}
+
+.spl-text-align {
+}
+
+.spl-top {
+
+}
+#affR {
+  position: relative;
+}
+
+#affR span {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#btn-group {
+  width: 100%;
+  margin: 60px 0px;
+}
+
+#btn-nouveau-theme * {
+  margin-top: 10px !important;
+
+}
+
+#btn-nouveau-theme {
+  padding: 12px;
+  border: 1px solid #d8d8d8;
+  background-color: #f8f8f8;
+
+}
