@@ -13,13 +13,13 @@ export class IdentFormComponent implements OnInit {
 
   constructor(
     private router: Router,
+    // private identService: IdentService,
   ) { }
 
   ngOnInit() { }
 
   onSubmit(){
     window.location.replace('/questionnaire');
-    // this.router.navigate()
     console.log(this.userModel);
   }
 
