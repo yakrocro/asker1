@@ -1,0 +1,15 @@
+#section-question {
+
+}
+
+#section-reponse {
+margin: 50px 0px;
+}
+
+#section-reponse span, #section-question span{
+ display: block;
+ width: 100%;
+ font-size: 0.8rem;
+ color: gray;
+ margin:5px 0px;
+}

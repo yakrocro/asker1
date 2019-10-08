@@ -1,1 +1,142 @@
-<p>question works!</p>
+<h2 class="title">Nouvelle question</h2>
+
+<form>
+
+  <div id="section-question">
+    <h5>Question</h5>
+    <div class="form-group row">
+      <label for="libelle" class="col-sm-2 col-form-label">Libellé</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="libelle" name="libelle">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="commentaire" class="col-sm-2 col-form-label">Commentaire</label>
+      <div class="col-sm-10">
+        <div class="">
+          <input type="text" class="form-control" id="commentaire" name="commentaire">
+        </div>
+        <span>Le commentaire de la question peut vous servir pour apporter une précision a la question.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="section-reponse">
+    <h5>Réponse</h5>
+    <div class="form-group row">
+      <label for="type" class="col-sm-2 col-form-label">Type</label>
+      <div class="col-sm-6">
+        <div class="w-100">
+          <select id="type" class="form-control">
+            <option value="" selected>Choisir un type de réponse...</option>
+            <option value="q-f">réponse fermée</option>
+            <option value="q-o">réponse ouverte</option>
+            <option value="q-c-m">réponse a choix multiple</option>
+          </select>
+        </div>
+        <span>Réponse fermée, exemple: oui / non, </span>
+        <span>Réponse ouverte, est une ou plusieurs phrase(s) complète(s), </span>
+        <span>Réponse a choix multiple, une ou plusieurs réponse(s) valident parmis plusieurs propositions.</span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="" class="col-sm-2 col-form-label">Réponse</label>
+      <div class="col-sm-6">
+        <div class="w-100" id="rep-ouverte">
+          <h6>Réponse ouverte</h6>
+          <p>L'utilisateur entrera une phrase en guise de réponse a cette question.</p>
+          <br>
+        </div>
+        <div class="w-100" id="rep-fermée">
+          <h6>Réponse fermée</h6>
+          <label for="preference">Préférence</label>
+          <select id="type" class="form-control">
+            <option value="vrai-faux">vrai/faux</option>
+            <option value="oui-non">oui/non</option>
+            <option value="haut-bas">haut/bas</option>
+            <option value="gauche-droite">gauche-droite</option>
+            <option value="personnaliser">personnaliser...</option>
+          </select><br>
+        </div>
+        <div class="w-100"  id="rep-a-choix-multiple">
+          <h6>Réponse a choix multiple</h6>
+          <div class="form-check form-check-inline w-100">
+            <input class="form-check-input" type="radio" name="nbr-choix" id="nbr-choix"  checked>
+            <label class="form-check-label col" for="nbr-choix">
+              Nombre de choix
+            </label>
+            <input type="text" class="form-control col" id="nbr-choix"
+            name="nbr-choix" value="4">
+          </div>
+          <div class="form-check form-check-inline w-100">
+            <input class="form-check-input" type="radio" name="nbr-choix" id="un-a-un" >
+            <label class="form-check-label col" for="un-a-un">
+              un choix a la fois.
+            </label>
+          </div>
+          <button type="button" name="button" class="btn btn-outline-secondary">Créer la liste de choix</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="" class="col-sm-2 col-form-label">Note</label>
+      <div class="col-sm-6">
+        <div class="w-100">
+          <input type="text" class="form-control" id="commentaire" name="commentaire">
+        </div>
+        <span>Spécifier le nombre de point accorder a cette réponse.</span>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="commentaire-reponse" class="col-sm-2 col-form-label">Commentaire</label>
+      <div class="col-sm-10">
+        <div class="">
+          <input type="text" class="form-control" id="commentaire-reponse" name="commentaire-reponse">
+        </div>
+        <span>Le commentaire de la réponse est souvent utile pour argumenter d'avantage la réponse.</span>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="" class="col-sm-2 col-form-label">Référence(s)</label>
+      <div class="col-sm-6">
+        <div class="w-100">
+          <select id="type" class="form-control">
+            <option value="" selected>Choisir un type de référence.</option>
+            <option value="ref-lien">un lien vers un site web</option>
+            <option value="ref-img">une image, une copie d'ecran</option>
+            <option value="ref-text">un text signé</option>
+          </select>
+        </div>
+        <span>Une référence peut etre un lien vers au site, une image, une copie d'écran ou encore un text dont vous n'ètes pas auteur.</span>
+        <br>
+        <div class="w-100">
+          <input type="text" class="form-control" id="commentaire-reference"
+          name="commentaire-reference" placeholder="Commentaire ">
+        </div>
+        <span>Un commentaire sur la référence.</span>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <span class="col-sm-2">&nbsp;</span>
+      <div class="col-sm-6">
+        <div class="btn-group" role="group" aria-label="Basic example" id="btn-group">
+          <button type="button" class="btn btn-outline-secondary" (click)=(nouvelleQuestion())>Nouvelle question</button>
+          <button type="button" class="btn btn-outline-secondary">Enregistrer</button>
+          <button type="button" class="btn btn-outline-secondary">Annuler</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+</form>

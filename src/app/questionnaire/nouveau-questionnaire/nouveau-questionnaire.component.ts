@@ -12,4 +12,10 @@ export class NouveauQuestionnaireComponent implements OnInit {
   ngOnInit() {
   }
 
+  nouvelleQuestion() {
+    console.log("ajouter une nouvelle question.");
+    window.location.replace('/questionnaire/question/nouveau');
+
+  }
+
 }
