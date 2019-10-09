@@ -18,4 +18,13 @@ export class NouveauQuestionnaireComponent implements OnInit {
 
   }
 
+  parametres() {
+    console.log("ajouter une nouvelle question.");
+    window.location.replace('/questionnaire/parametres');
+  }
+
+  enregistrer() {
+    
+  }
+
 }
