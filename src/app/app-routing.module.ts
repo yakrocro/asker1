@@ -7,7 +7,7 @@ import { NouveauQuestionnaireComponent } from './questionnaire/nouveau-questionn
 import { IdentFormComponent } from './ident-form/ident-form.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { UserListComponent } from './user-list/user-list.component';
-import { ParametreQuestionnaireComponent } from './parametre-questionnaire/parametre-questionnaire.component';
+//import { ParametreQuestionnaireComponent } from './parametre-questionnaire/parametre-questionnaire.component';
 
 
 const routes: Routes = [
@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   { path: 'questionnaire/nouveau', component: NouveauQuestionnaireComponent },
   { path: 'questionnaire/question/nouveau', component: QuestionComponent },
-  { path: 'questionnaire/parametres', component: ParametreQuestionnaireComponent },
+  // { path: 'questionnaire/parametres', component: ParametreQuestionnaireComponent },
 ];
 
 @NgModule({
@@ -34,5 +34,5 @@ export const routingComponents = [
   UserListComponent,
   NouveauQuestionnaireComponent,
   QuestionComponent,
-  ParametreQuestionnaireComponent
+  // ParametreQuestionnaireComponent
 ]

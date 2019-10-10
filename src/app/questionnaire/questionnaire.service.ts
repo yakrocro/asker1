@@ -8,9 +8,14 @@ export class QuestionnaireService {
 
   questionnaire: Questionnaire ;
 
-  constructor() {
+  constructor(
+    public questionnaire: Questionnaire
+  ) {
 
   }
 
+  getQuestionnaireList(){
+    
+  }
 
 }
