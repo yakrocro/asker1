@@ -1,0 +1,89 @@
+<h2 class="title">Paramètres du questionnaire</h2>
+
+<form class="" action="index.html" method="post">
+  <div class="form-group row align-items-center ">
+    <label for="nb-question" class="col-sm-2 col-form-label">Nombre de question</label>
+    <div class="col-sm-10">
+      <input class="form-control w-100" type="text" name="nb-question" id="nb-question" >
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="ordre-question" class="col-sm-2">Ordre des questions</label>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ordre-question" id="ordre-creation" value="ordre-creation" checked>
+        <label class="form-check-label" for="ordre-creation">
+          Ordre de creation
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ordre-question" id="ordre-aleatoire" value="ordre-aleatoire" >
+        <label class="form-check-label" for="ordre-aleatoire">
+          Ordre aleatoire
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="evolution-oui" class="col-sm-2">Afficher évolution</label>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-evolution" id="evolution-oui" value="evolution-oui" checked>
+        <label class="form-check-label" for="evolution-oui"> Oui </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-evolution" id="evolution-non" value="evolution-non" >
+        <label class="form-check-label" for="evolution-non">  Non </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="evolution-oui" class="col-sm-2">Afficher le resultat </label>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-resultat"
+        id="apres-chaque-question" value="apres-chaque-question" checked>
+        <label class="form-check-label" for="apres-chaque-question">Après chaque question</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-resultat" id="fin-questionnaire" value="fin-questionnaire" >
+        <label class="form-check-label" for="fin-questionnaire">A la fin du questionnaire</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="afficher-resultat" id="pas-afficher" value="pas-afficher" >
+        <label class="form-check-label" for="pas-afficher">Ne pas afficher</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="form-row align-items-center">
+  <label for="evolution-oui" class="col-sm-2 col-form-label">Afficher le sc </label>
+  <div class="col-sm-10">
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="afficher-resultat"
+  id="apres-chaque-question" value="apres-chaque-question" checked>
+  <label class="form-check-label" for="apres-chaque-question">Après chaque question</label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="afficher-resultat" id="fin-questionnaire" value="fin-questionnaire" >
+  <label class="form-check-label" for="fin-questionnaire">A la fin du questionnaire</label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="afficher-resultat" id="pas-afficher" value="pas-afficher" >
+  <label class="form-check-label" for="pas-afficher">Ne pas afficher</label>
+  </div>
+  </div>
+  </div> -->
+
+  <div class="form-row align-items-center">
+    <div class="col-sm-2 col-form-label">&nbsp;</div>
+    <div class="btn-group" role="group" aria-label="Basic example" id="btn-group">
+      <button type="button" class="btn btn-outline-secondary" (click)=(enregistrer())>Enregistrer</button>
+        <button type="button" class="btn btn-outline-secondary" (click)=(enregistrerEtAjouter())>Enregistrer et ajouter questions</button>
+      <button type="button" class="btn btn-outline-secondary">Annuler</button>
+    </div>
+  </div>
+</form>
